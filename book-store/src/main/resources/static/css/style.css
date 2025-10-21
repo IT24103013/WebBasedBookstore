@@ -1,0 +1,111 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* --- Body & Background Styling --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #12121c; /* Deep, dark blue-purple background */
+    color: #e0e0e0; /* Off-white text for better readability */
+    background-image:
+        radial-gradient(at 47% 33%, hsl(223.71, 71%, 45%) 0px, transparent 50%),
+        radial-gradient(at 82% 65%, hsl(263.37, 73%, 45%) 0px, transparent 50%);
+    background-attachment: fixed; /* Keeps the gradient fixed during scroll */
+    min-height: 100vh;
+}
+/* --- The Glass Effect Panel --- */
+/* This is the core class we will apply to our containers */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05); /* Very transparent white */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* For Safari support */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* --- Table Styling --- */
+.table {
+    color: #e0e0e0;
+    border: none;
+}
+
+.table thead th {
+    color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-top: none;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* --- Button Styling --- */
+.btn-primary {
+    background-color: #5865F2; /* A modern, vibrant blue */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4752C4;
+}
+
+.btn-success {
+    background-color: #3BA55D;
+    border: none;
+}
+.btn-success:hover {
+    background-color: #2D7D46;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* --- Form Styling --- */
+.form-control, .form-select {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+    border-radius: 8px;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: #5865F2;
+    box-shadow: 0 0 0 0.25rem rgba(88, 101, 242, 0.5);
+    color: #ffffff;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* --- Custom Status Badges --- */
+.badge.bg-success { background-color: #3BA55D !important; }
+.badge.bg-warning { background-color: #FEE75C !important; color: #333 !important; }
+.badge.bg-danger { background-color: #ED4245 !important; }
+.badge.bg-info { background-color: #3498DB !important; }
